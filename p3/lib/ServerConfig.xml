@@ -1,0 +1,9 @@
+<ServerConfig>
+  <data num_participants="4"></data>
+  <data num_maps_host="2"></data>
+  <data num_reduce_host="2"></data>
+  <data root_dir="/afs/andrew.cmu.edu/usr3/keweiz/private/15-440/p3/lib"></data>
+  <data master_server="ghc26.ghc.andrew.cmu.edu"></data>
+  <data userid="keweiz"></data>
+</ServerConfig>
+

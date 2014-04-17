@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project poodah">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar" depends="compile">
+        <jar destfile="../lib/TestMaster.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="poodah.startup.TestMaster"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="../poodah/bin"/>
+        </jar>
+    </target>
+		<target name="compile">
+			<javac srcdir="../poodah/src/" destdir="../poodah/bin" includes="**/*.java" target="1.6">
+    	</javac>
+  	</target>
+</project>
